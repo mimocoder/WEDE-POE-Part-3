@@ -1,62 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home | Hashtag SA Unite</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hashtag SA Unite | Non-Profit Empowering South African Youth</title>
+  <meta name="description" content="Hashtag SA Unite is a South African non-profit supporting youth, families, the elderly and low-income households across Gauteng and the Western Cape.">
+  <meta name="keywords" content="non-profit South Africa, youth empowerment, community outreach, family workshops, Gauteng, Western Cape, Cape Town, volunteer, sponsor">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Hashtag SA Unite">
+  <meta name="theme-color" content="#fffacd">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Hashtag SA Unite">
+  <meta property="og:title" content="Hashtag SA Unite | Non-Profit Empowering South African Youth">
+  <meta property="og:description" content="Hashtag SA Unite is a South African non-profit supporting youth, families, the elderly and low-income households across Gauteng and the Western Cape.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https://unpkg.com https://*.basemaps.cartocdn.com https://encrypted-tbn0.gstatic.com; connect-src 'self' https://jsonplaceholder.typicode.com; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="home">
 <header>
 
-    <a class="logo" href="Home_Page.html">Hashtag SA Unite</a>
-    <nav>
-        <a href="Home_Page.html" aria-current="page">Home</a>
-        <a href="About_us_Page.html">About us</a>
-        <a href="Services_Page.html">Services</a>
-        <a href="Enquiry_Page.html">Enquiries</a>
-    </nav>
-    <a class="button" href="Contact_Page.html">Contact</a>
+  <a class="logo" href="Home_Page.html">Hashtag SA Unite</a>
+  <nav>
+    <a href="Home_Page.html" aria-current="page">Home</a>
+    <a href="About_us_Page.html">About us</a>
+    <a href="Services_Page.html">Services</a>
+    <a href="Enquiry_Page.html">Enquiries</a>
+  </nav>
+  <a class="button" href="Contact_Page.html">Contact</a>
 </header>
 
 <main>
-    <div>
-        <section class="hero" style="--photo: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHVK4anVlMdIWktMtkcWOiFbmyCvljQX7_qUfjzvw1bQ&s=10')">
-            <h1>Welcome to Hashtag SA Unite</h1>
-            <p><em>Serving our communities with love</em></p>
-            <p><strong>Empowering the youth.</strong> This is the work this community does for the people.</p>
-        </section>
+  <div>
+    <section class="hero" style="--photo: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHVK4anVlMdIWktMtkcWOiFbmyCvljQX7_qUfjzvw1bQ&s=10')">
+      <h1>Welcome to Hashtag SA Unite</h1>
+      <p><em>Serving our communities with love</em></p>
+      <p><strong>Empowering the youth.</strong> This is the work this community does for the people.</p>
+    </section>
 
-        <h2>Who we are</h2>
-        <p>Hashtag SA Unite is a community-driven non-profit that brings people together to spark positive action across South Africa.</p>
-        <p>We work with young people, families, the elderly and low-income households. Our programs run from community centers in Gauteng and the Western Cape and through mobile outreach units.</p>
-        <p>Community leaders, organizations and businesses join us because they care about collaboration, integrity and lasting change. Together we are building better communities for our people and our children. You can read about our programs on the <a href="Services_Page.html">Services page</a>.</p>
+    <h2>Who we are</h2>
+    <p>Hashtag SA Unite is a community-driven non-profit that brings people together to spark positive action across South Africa.</p>
+    <p>We work with young people, families, the elderly and low-income households. Our programs run from community centers in Gauteng and the Western Cape and through mobile outreach units.</p>
+    <p>Community leaders, organizations and businesses join us because they care about collaboration, integrity and lasting change. Together we are building better communities for our people and our children. You can read about our programs on the <a href="Services_Page.html">Services page</a>.</p>
 
-        <div class="row">
-            <img src="images/website_pic_2.jpg" alt="Children and adults among donated toys and clothes at a community event">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHVK4anVlMdIWktMtkcWOiFbmyCvljQX7_qUfjzvw1bQ&s=10" alt="Hashtag SA Unite community">
-        </div>
+    <div class="row">
+      <a href="images/gallery/Gallery 7.jpg" data-caption="Children and adults among donated toys and clothes at a community event"><img src="images/gallery/Gallery 7.jpg" alt="Children and adults among donated toys and clothes at a community event" loading="lazy"></a>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHVK4anVlMdIWktMtkcWOiFbmyCvljQX7_qUfjzvw1bQ&s=10" alt="Hashtag SA Unite community">
     </div>
+  </div>
 
-    <aside>
-        <p>We do our work to help those who are in need. This is to build better communities for our people and our children.</p>
-        <p>Explore our site to learn more about what we do.</p>
-        <hr>
-        <a class="button" href="About_us_Page.html">About us</a>
-        <p>We unite individuals and communities through shared purpose, collaboration, and empowerment.</p>
-        <div class="row">
-            <a class="button" href="Enquiry_Page.html">Get support</a>
-            <a class="button" href="Enquiry_Page.html">Partner with us</a>
-        </div>
-    </aside>
+  <aside>
+    <p>We do our work to help those who are in need. This is to build better communities for our people and our children.</p>
+    <p>Explore our site to learn more about what we do.</p>
+    <hr>
+    <a class="button" href="About_us_Page.html">About us</a>
+    <p>We unite individuals and communities through shared purpose, collaboration, and empowerment.</p>
+    <div class="row">
+      <a class="button" href="Enquiry_Page.html">Get support</a>
+      <a class="button" href="Enquiry_Page.html">Partner with us</a>
+    </div>
+  </aside>
 </main>
 
 <footer>
-    <a class="button" href="#">Back to top</a>
-    <!-- Add more social links here when you have them -->
-    <p class="social">Follow us on <a href="https://www.facebook.com/hashtagsaunite/">Facebook</a></p>
-    <a class="button" href="tel:+27768777888">Call us</a>
-    <p>&copy; Hashtag SA Unite. All rights reserved.</p>
+  <a class="button" href="#">Back to top</a>
+  <!-- Add more social links here when you have them -->
+  <p class="social">Follow us on <a href="https://www.facebook.com/hashtagsaunite/">Facebook</a></p>
+  <a class="button" href="tel:+27768777888">Call us</a>
+  <p>&copy; <span id="year"></span> Hashtag SA Unite. All rights reserved.</p>
 </footer>
+<script src="JavaEditing.js"></script>
 </body>
 </html>
