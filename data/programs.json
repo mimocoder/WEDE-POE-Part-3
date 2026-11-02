@@ -1,0 +1,26 @@
+[
+  {
+    "id": "youth",
+    "category": "youth",
+    "title": "Youth Empowerment Initiative",
+    "summary": "Provides skills development, mentorship, and leadership workshops to equip young people for the future.",
+    "target": "Youth aged 15 to 25",
+    "location": "Community centers across Gauteng and Western Cape"
+  },
+  {
+    "id": "community",
+    "category": "community",
+    "title": "Community Support & Outreach",
+    "summary": "Offers food security assistance, wellness checks, and companionship programs to support vulnerable residents.",
+    "target": "The elderly and low-income families",
+    "location": "Local township centers and mobile outreach units"
+  },
+  {
+    "id": "family",
+    "category": "family",
+    "title": "Family Unity Workshops",
+    "summary": "Hosts interactive counseling and activity sessions designed to strengthen family bonds and resolve community challenges.",
+    "target": "Families and caregivers",
+    "location": ""
+  }
+]
