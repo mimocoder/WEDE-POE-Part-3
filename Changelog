@@ -1,1 +1,69 @@
-Changelog
+CHANGELOG : Hashtag SA Unite Website
+
+20 September 2026
+
+Added
+* The 5 HTML Pages : Home, About us, Servicees, Enquiry and Contact pages
+* Created and linked style.css sheet to all pages
+*	The content: The brand story, mission and values of the organization. Followed by target audience, three programs with target groups and locations, office hours and contact details
+*	Enquiry table made
+
+21 September 2026
+
+Fixed
+*	The nested body tags
+*	The missing footer tag on the Home page
+*	The phone link was changed to that it is able to dial correctly
+*	Office hours are properly corrected
+
+Changes
+* The pages all now have a clear header, main and footer
+*	The underline tag <u> has been removed as well as the background colour <bg colour> tags
+*	The enquiry table was made into a usable form
+
+Added
+*	On all pages a viewpoint Meta tag has been made. 
+
+22 September 2026
+
+*	A colour palette : colours include lemon chiffon, corn silk and off-white
+*	The fonts used: Aptos, Arial Nova, Calibri and Arial
+*	The proper styling for the navigation buttons and centred content
+*	Some service cards in a three grid column
+
+Changed
+*	The rules are written on plain elements so the cascade works
+
+23 September 2026
+
+Added
+*	The media queries with their sizes respective of each electronic device
+*	Cards and form fields made. The navigation links go full in width on small screens
+
+Changed
+*	The contact map is made more responsive
+*	The layouts for electronic devices is tested to work well
+
+24 September 2026
+
+Added
+*	The website has its final touches starting with the homepage that is  retouched to look like the wireframe from Part 1
+*	The footer at the bottom has buttons that allow calls, facebook and a back to the top feature
+*	The lemon Chiffon overlay on the about us banner
+*	The about us page:  section introduces who the organization is and how to get involved
+*	Contact us page: the intro text is made to introduce organization 
+
+Changed
+*	Our services on Home page is replaced by who are section with a picture at the bottom
+*	All pages are renamed without Spaces and links are updated
+*	The hero photo is overlaid
+
+10 October 2026
+
+Added
+* The status line added 
+* The browser check was swithced off as previously the bowser stopped the submit fron fields
+* Form ID was added
+* Filed ID was added.
+
+
