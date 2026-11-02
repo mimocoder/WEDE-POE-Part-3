@@ -42,7 +42,7 @@ h1 {
   line-height: 1.2;
 }
 
-header p { margin: 0.25rem 0 1rem; font-style: italic; }
+header p { margin: 0.25rem auto 1rem; font-style: italic; }
 
 nav {
   display: flex;
@@ -277,4 +277,318 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 1.25rem 0; }
   .hero { min-height: 13rem; padding: 1.25rem; }
   .social { order: -1; flex-basis: 100%; }
   .home footer .button { flex: 1; }
+}
+
+
+/* Form validation messages */
+.error {
+  min-height: 1.2em;
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #b00020;
+}
+
+#form-status { margin: 0; font-weight: bold; }
+
+
+/* ==========================================================================
+   Interactive features (driven by JavaEditing.js)
+   ========================================================================== */
+
+/* Smooth scrolling for "Back to top" and in-page links */
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+/* Scroll animation: elements fade and slide in once (class added by JS) */
+.reveal {
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.25s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.cards section:hover { box-shadow: 0 0.5rem 1.25rem rgba(51, 47, 28, 0.15); }
+
+/* Invalid form fields */
+[aria-invalid="true"] { border-color: #b00020; background: #fff6f6; }
+
+button:disabled { opacity: 0.6; cursor: wait; }
+
+/* ---------- Tabs (About page) ---------- */
+.tabs { margin-top: 1.5rem; }
+
+.tab-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid var(--line);
+}
+
+.tab-list button {
+  color: var(--ink);
+  background: var(--silk);
+  border: 1px solid var(--line);
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.tab-list button:hover { background: var(--lemon); }
+
+.tab-list button[aria-selected="true"] {
+  color: var(--off-white);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.tab-panel { animation: fade-up 0.4s ease; }
+
+.tab-panel[hidden] { display: none; }
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(0.75rem); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* ---------- Accordion (Contact page FAQ) ---------- */
+.accordion { max-width: 48rem; margin-bottom: 1.5rem; }
+
+.accordion-item {
+  margin-bottom: 0.75rem;
+  background: var(--silk);
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.accordion-item h3 { margin: 0; }
+
+.accordion-trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  text-align: left;
+  color: var(--ink);
+  background: transparent;
+  border-radius: 0;
+  transition: background 0.25s ease;
+}
+
+.accordion-trigger:hover { color: var(--ink); background: var(--lemon); }
+
+.accordion-trigger::after {
+  content: "+";
+  font-size: 1.5rem;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.accordion-trigger[aria-expanded="true"]::after { transform: rotate(45deg); }
+
+/* The row height animates from 0 to its natural height */
+.accordion-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.accordion-panel.open { grid-template-rows: 1fr; }
+
+.accordion-inner { min-height: 0; overflow: hidden; }
+
+.accordion-content { padding: 0 1.25rem 0.5rem; }
+
+.accordion-content p { margin-bottom: 0.75rem; }
+
+/* ---------- Services: search tools and program cards ---------- */
+.toolbar {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.count { margin-bottom: 1rem; font-style: italic; }
+
+.cards { align-items: stretch; }
+
+.program-card { display: flex; flex-direction: column; }
+
+.program-card .details-btn { margin-top: auto; }
+
+.tag {
+  align-self: flex-start;
+  margin-bottom: 0.5rem;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background: var(--lemon);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+}
+
+mark { background: #ffe66d; color: inherit; padding: 0 0.1em; border-radius: 0.15em; }
+
+.loading, .no-results { grid-column: 1 / -1; }
+
+/* ---------- Dialogs: program modal and photo lightbox ---------- */
+dialog {
+  width: 100%;
+  max-width: min(36rem, 92vw);
+  padding: 0;
+  color: var(--ink);
+  background: var(--off-white);
+  border: 1px solid var(--line);
+  border-radius: 0.6rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+dialog::backdrop { background: rgba(51, 47, 28, 0.6); }
+
+dialog[open] { animation: pop-in 0.25s ease; }
+
+dialog[open]::backdrop { animation: fade-in 0.25s ease; }
+
+@keyframes pop-in {
+  from { opacity: 0; transform: translateY(1rem) scale(0.97); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+
+.modal-body { padding: 2rem 1.5rem 1.5rem; }
+
+.modal-body h2 { margin-top: 0; padding-right: 2rem; }
+
+.modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+  border-radius: 50%;
+}
+
+/* ---------- Gallery and lightbox ---------- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.gallery a {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: none;
+  height: 9rem;
+  margin: 0;
+  border-radius: 0;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.gallery a:hover img, .gallery a:focus-visible img { transform: scale(1.08); }
+
+.lightbox {
+  max-width: min(60rem, 96vw);
+  padding: 2.5rem 3.5rem 1rem;
+  color: #fff;
+  background: #1c1a10;
+  text-align: center;
+}
+
+.lightbox figure { margin: 0; }
+
+.lightbox img {
+  width: auto;
+  max-width: 100%;
+  max-height: 70vh;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.lightbox img.swap { animation: fade-in 0.3s ease; }
+
+.lightbox figcaption { margin-top: 0.75rem; }
+
+.lightbox-count { margin: 0.5rem auto 0; font-size: 0.9rem; opacity: 0.8; }
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  width: 2.75rem;
+  height: 3.5rem;
+  padding: 0;
+  font-size: 2rem;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+.lightbox-nav.prev { left: 0.4rem; }
+
+.lightbox-nav.next { right: 0.4rem; }
+
+/* ---------- Map ---------- */
+.map {
+  height: 22rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+}
+
+.map-tools { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.75rem; }
+
+.map-tools .button { display: inline-block; }
+
+/* The site's general image rules must not stretch Leaflet's map tiles */
+.leaflet-container img {
+  display: inline;
+  width: auto;
+  max-width: none !important;
+  height: auto;
+  margin: 0;
+  border-radius: 0;
+}
+
+.leaflet-container a { color: #0078a8; }
+
+/* ---------- Responsive adjustments ---------- */
+@media (max-width: 48em) {
+  .toolbar { grid-template-columns: 1fr; }
+  .lightbox { padding: 2.5rem 0.75rem 1rem; }
+  .lightbox-nav { top: auto; bottom: 0.75rem; transform: none; }
+  .map { height: 18rem; }
+  .gallery img { height: 7rem; }
+  .map-tools .button, .map-tools button { flex: 1 1 100%; }
+}
+
+@media (max-width: 30em) {
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Visitors who ask their device for less motion get no animations */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
+  }
 }
