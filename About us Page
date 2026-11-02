@@ -1,59 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About us | Hashtag SA Unite</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | Mission and Values | Hashtag SA Unite</title>
+  <meta name="description" content="Learn how Hashtag SA Unite brings people together to spark positive action in South Africa, including our mission, values and where we work.">
+  <meta name="keywords" content="about Hashtag SA Unite, non-profit mission, community values, Gauteng, Western Cape, Parow Cape Town">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Hashtag SA Unite">
+  <meta name="theme-color" content="#fffacd">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Hashtag SA Unite">
+  <meta property="og:title" content="About Us | Mission and Values | Hashtag SA Unite">
+  <meta property="og:description" content="Learn how Hashtag SA Unite brings people together to spark positive action in South Africa, including our mission, values and where we work.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https://unpkg.com https://*.basemaps.cartocdn.com https://encrypted-tbn0.gstatic.com; connect-src 'self' https://jsonplaceholder.typicode.com; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-    <h1>About us</h1>
-    <p>Serving our communities with love</p>
-    <nav>
-        <a href="Home_Page.html">Home</a>
-        <a href="About_us_Page.html" aria-current="page">About us</a>
-        <a href="Services_Page.html">Services</a>
-        <a href="Enquiry_Page.html">Enquiries</a>
-        <a href="Contact_Page.html">Contact</a>
-    </nav>
+  <h1>About us</h1>
+  <p>Serving our communities with love</p>
+  <nav>
+    <a href="Home_Page.html">Home</a>
+    <a href="About_us_Page.html" aria-current="page">About us</a>
+    <a href="Services_Page.html">Services</a>
+    <a href="Enquiry_Page.html">Enquiries</a>
+    <a href="Contact_Page.html">Contact</a>
+  </nav>
 </header>
 
 <main>
-    <section class="hero" style="--photo: url('images/website_pic_2.jpg')">
-        <h2>Bringing people together to spark positive action</h2>
+  <section class="hero" style="--photo: url('images/website_pic_2.jpg')">
+    <h2>Bringing people together to spark positive action</h2>
+  </section>
+
+  <div class="tabs" data-tabs="About Hashtag SA Unite">
+    <section data-tab-title="Brand story">
+      <h2>Brand story</h2>
+      <p>Hashtag SA Unite was founded to bring people together and spark positive action. It began with a vision to create a connected community where voice, purpose, and shared goals drive real impact across South Africa.</p>
+      <p>Everything we do starts with people: neighbors, families, young people and leaders who want to see their communities grow stronger.</p>
     </section>
 
-    <h2>Brand story</h2>
-    <p>Hashtag SA Unite was founded to bring people together and spark positive action. It began with a vision to create a connected community where voice, purpose, and shared goals drive real impact across South Africa.</p>
-    <p>Everything we do starts with people: neighbors, families, young people and leaders who want to see their communities grow stronger.</p>
-
-    <h2>Mission and values</h2>
-    <p>Our mission is to unite individuals and communities through shared purpose, collaboration, and empowerment. We value:</p>
-    <ul>
+    <section data-tab-title="Mission and values">
+      <h2>Mission and values</h2>
+      <p>Our mission is to unite individuals and communities through shared purpose, collaboration, and empowerment. We value:</p>
+      <ul>
         <li><strong>Integrity:</strong> we act honestly and are open about what we do.</li>
         <li><strong>Inclusivity:</strong> everyone is welcome and everyone has a voice.</li>
         <li><strong>Unity:</strong> we achieve more when we work together.</li>
         <li><strong>Meaningful change:</strong> we focus on actions that make a lasting difference.</li>
-    </ul>
+      </ul>
+    </section>
 
-    <h2>Who we work with</h2>
-    <p>Our work is for passionate individuals, community leaders, organizations, and businesses who care about collaboration, progress, and making a lasting positive impact in South Africa.</p>
-    <p>The people we serve include young people aged 15 to 25, families and caregivers, the elderly, and low-income families.</p>
+    <section data-tab-title="Who we work with">
+      <h2>Who we work with</h2>
+      <p>Our work is for passionate individuals, community leaders, organizations, and businesses who care about collaboration, progress, and making a lasting positive impact in South Africa.</p>
+      <p>The people we serve include young people aged 15 to 25, families and caregivers, the elderly, and low-income families.</p>
+    </section>
 
-    <h2>Where we work</h2>
-    <p>Our programs run from community centers across Gauteng and the Western Cape, and through mobile outreach units that reach local township centers. Our office is at 13 Parow St, Parow, Cape Town.</p>
+    <section data-tab-title="Where we work">
+      <h2>Where we work</h2>
+      <p>Our programs run from community centers across Gauteng and the Western Cape, and through mobile outreach units that reach local township centers. Our office is at 13 Parow St, Parow, Cape Town.</p>
+      <p><a href="Contact_Page.html">See the map on our Contact page</a>.</p>
+    </section>
 
-    <h2>How you can get involved</h2>
-    <p>Individuals, community leaders, organizations and businesses are welcome to partner with us. If you or your family need support, we would like to hear from you. You can also read about our programs on the <a href="Services_Page.html">Services page</a>.</p>
-    <div class="row">
+    <section data-tab-title="Get involved">
+      <h2>How you can get involved</h2>
+      <p>Individuals, community leaders, organizations and businesses are welcome to partner with us. If you or your family need support, we would like to hear from you. You can also read about our programs on the <a href="Services_Page.html">Services page</a>.</p>
+      <div class="row">
         <a class="button" href="Enquiry_Page.html">Get support</a>
         <a class="button" href="Enquiry_Page.html">Partner with us</a>
-    </div>
+      </div>
+    </section>
+  </div>
+
+  <h2>Our work in pictures</h2>
+  <p>Select a picture to see it larger. Use the arrow keys or the arrow buttons to move between pictures.</p>
+  <div class="gallery" data-gallery>
+    <a href="images/gallery/Gallery 1.jpg" data-caption="Youth Empowerment Initiative: a leadership workshop"><img src="images/gallery/Gallery 1.jpg" alt="Young people at a leadership workshop" loading="lazy"></a>
+    <a href="images/gallery/Gallery 2.jpg" data-caption="Community Support &amp; Outreach: food security assistance"><img src="images/gallery/Gallery 2.jpg" alt="Volunteers handing out food parcels" loading="lazy"></a>
+    <a href="images/gallery/Gallery 3.jpg" data-caption="Family Unity Workshops: an activity session"><img src="images/gallery/Gallery 3.jpg" alt="Families taking part in an activity session" loading="lazy"></a>
+    <a href="images/gallery/Gallery 4.jpg" data-caption="Mobile outreach unit visiting a township center"><img src="images/gallery/Gallery 4.jpg" alt="Mobile outreach unit at a township center" loading="lazy"></a>
+    <a href="images/gallery/Gallery 5.jpg" data-caption="Mentorship session at a community center"><img src="images/gallery/Gallery 5.jpg" alt="A mentor talking with a young person" loading="lazy"></a>
+    <a href="images/gallery/Gallery 6.jpg" data-caption="Community event with donated toys and clothes"><img src="images/gallery/Gallery 6.jpg" alt="Children and adults at a community event" loading="lazy"></a>
+  </div>
 </main>
 
 <footer>
-    <p>&copy; Hashtag SA Unite. All rights reserved.</p>
+  <p>&copy; <span id="year"></span> Hashtag SA Unite. All rights reserved.</p>
 </footer>
+<script src="JavaEditing.js"></script>
 </body>
 </html>
