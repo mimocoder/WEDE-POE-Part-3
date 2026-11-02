@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Services | Hashtag SA Unite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Services</h1>
+    <p>Serving our communities with love</p>
+    <nav>
+        <a href="Home_Page.html">Home</a>
+        <a href="About_us_Page.html">About us</a>
+        <a href="Services_Page.html" aria-current="page">Services</a>
+        <a href="Enquiry_Page.html">Enquiries</a>
+        <a href="Contact_Page.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Our programs and services</h2>
+    <div class="cards">
+        <section>
+            <h3>Youth Empowerment Initiative</h3>
+            <p>Provides skills development, mentorship, and leadership workshops to equip young people for the future.</p>
+            <p><strong>Target group:</strong> Youth aged 15 to 25.</p>
+            <p><strong>Location:</strong> Community centers across Gauteng and Western Cape.</p>
+        </section>
+        <section>
+            <h3>Community Support &amp; Outreach</h3>
+            <p>Offers food security assistance, wellness checks, and companionship programs to support vulnerable residents.</p>
+            <p><strong>Target group:</strong> The elderly and low-income families.</p>
+            <p><strong>Location:</strong> Local township centers and mobile outreach units.</p>
+        </section>
+        <section>
+            <h3>Family Unity Workshops</h3>
+            <p>Hosts interactive counseling and activity sessions designed to strengthen family bonds and resolve community challenges.</p>
+            <p><strong>Target group:</strong> Families and caregivers.</p>
+        </section>
+    </div>
+    <h2>Office hours</h2>
+    <p>Monday to Thursday: 9:00 to 17:00<br>Friday: 9:00 to 14:30</p>
+</main>
+
+<footer>
+    <p>&copy; Hashtag SA Unite. All rights reserved.</p>
+</footer>
+</body>
+</html>
