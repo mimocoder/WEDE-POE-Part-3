@@ -66,4 +66,35 @@ Added
 * Form ID was added
 * Filed ID was added.
 
+13 October 2026
+
+Changed
+*	Car leftovers replaced. The carcategory field and the message "Please select a car category." now check the Type of support dropdown and say "Please select a type of support."
+*	Phone rule. It used to demand exactly 10 digits even though the HTML called the field optional. An empty phone number now passes, and a filled one must still be 10 digits.
+*	Live re-checking. In the first rewrite, one keystroke cleared the status message and stopped further checks. A flag, attempted, now turns re-checking on after the first submit and off again after a successful submit.
+
+Added
+* A check that the message box is not empty.
+
+22 October 2026
+
+Changed
+* Dropdown re-check. The dropdown now also re-checks on change, because choosing an option does not always fire input.
+
+Added
+* The labels in the error text now match the page: "First name" and "Last name" instead of "Name" and "Surname".
+
+24 October 2026
+
+Changed
+*	Error text. A new .error rule gives validation messages a dark red colour (#b00020), a smaller size and a reserved line height, so the layout does not jump when a message appears.
+*	Status message. A new #form-status rule makes the status line bold with no extra margin.
+* Tagline. The header tagline (header p) now uses margin: 0.25rem auto 1rem. It was pushed to the left because paragraphs have a maximum width
+
+30 October 2026
+
+Changed
+* Script rewritten for the support-type form; live re-checking fixed; dead menu code removed
+
+
 
