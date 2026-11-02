@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enquiries | Hashtag SA Unite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Enquiries</h1>
+    <p>Serving our communities with love</p>
+    <nav>
+        <a href="Home_Page.html">Home</a>
+        <a href="About_us_Page.html">About us</a>
+        <a href="Services_Page.html">Services</a>
+        <a href="Enquiry_Page.html" aria-current="page">Enquiries</a>
+        <a href="Contact_Page.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <h2>To get in touch with us</h2>
+    <form action="mailto:info@hashtagsaunite.co.za" method="post" enctype="text/plain">
+        <div class="row">
+            <label>First name <input type="text" name="first-name" autocomplete="given-name" required></label>
+            <label>Last name <input type="text" name="last-name" autocomplete="family-name" required></label>
+        </div>
+        <label>Email <input type="email" name="email" autocomplete="email" required></label>
+        <label>Phone number <input type="tel" name="phone" autocomplete="tel"></label>
+        <label>Type of support
+            <select name="support-type" required>
+                <option value="">Choose one</option>
+                <option>Youth Empowerment Initiative</option>
+                <option>Community Support &amp; Outreach</option>
+                <option>Family Unity Workshops</option>
+                <option>Donation or partnership</option>
+                <option>Something else</option>
+            </select>
+        </label>
+        <label>Your message <textarea name="message" required></textarea></label>
+        <button type="submit">Send enquiry</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; Hashtag SA Unite. All rights reserved.</p>
+</footer>
+</body>
+</html>
