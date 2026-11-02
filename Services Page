@@ -1,51 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Services | Hashtag SA Unite</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Youth, Outreach and Family Programs | Hashtag SA Unite</title>
+  <meta name="description" content="Explore the Youth Empowerment Initiative, Community Support and Outreach, and Family Unity Workshops run by Hashtag SA Unite in Gauteng and the Western Cape.">
+  <meta name="keywords" content="youth empowerment programs, community support, outreach programs, family workshops, mentorship, food security South Africa">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Hashtag SA Unite">
+  <meta name="theme-color" content="#fffacd">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Hashtag SA Unite">
+  <meta property="og:title" content="Youth, Outreach and Family Programs | Hashtag SA Unite">
+  <meta property="og:description" content="Explore the Youth Empowerment Initiative, Community Support and Outreach, and Family Unity Workshops run by Hashtag SA Unite in Gauteng and the Western Cape.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https://unpkg.com https://*.basemaps.cartocdn.com https://encrypted-tbn0.gstatic.com; connect-src 'self' https://jsonplaceholder.typicode.com; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-    <h1>Services</h1>
-    <p>Serving our communities with love</p>
-    <nav>
-        <a href="Home_Page.html">Home</a>
-        <a href="About_us_Page.html">About us</a>
-        <a href="Services_Page.html" aria-current="page">Services</a>
-        <a href="Enquiry_Page.html">Enquiries</a>
-        <a href="Contact_Page.html">Contact</a>
-    </nav>
+  <h1>Services</h1>
+  <p>Serving our communities with love</p>
+  <nav>
+    <a href="Home_Page.html">Home</a>
+    <a href="About_us_Page.html">About us</a>
+    <a href="Services_Page.html" aria-current="page">Services</a>
+    <a href="Enquiry_Page.html">Enquiries</a>
+    <a href="Contact_Page.html">Contact</a>
+  </nav>
 </header>
 
 <main>
-    <h2>Our programs and services</h2>
-    <div class="cards">
-        <section>
-            <h3>Youth Empowerment Initiative</h3>
-            <p>Provides skills development, mentorship, and leadership workshops to equip young people for the future.</p>
-            <p><strong>Target group:</strong> Youth aged 15 to 25.</p>
-            <p><strong>Location:</strong> Community centers across Gauteng and Western Cape.</p>
-        </section>
-        <section>
-            <h3>Community Support &amp; Outreach</h3>
-            <p>Offers food security assistance, wellness checks, and companionship programs to support vulnerable residents.</p>
-            <p><strong>Target group:</strong> The elderly and low-income families.</p>
-            <p><strong>Location:</strong> Local township centers and mobile outreach units.</p>
-        </section>
-        <section>
-            <h3>Family Unity Workshops</h3>
-            <p>Hosts interactive counseling and activity sessions designed to strengthen family bonds and resolve community challenges.</p>
-            <p><strong>Target group:</strong> Families and caregivers.</p>
-        </section>
-    </div>
-    <h2>Office hours</h2>
-    <p>Monday to Thursday: 9:00 to 17:00<br>Friday: 9:00 to 14:30</p>
+  <h2>Our programs and services</h2>
+  <p>Search our programs, filter them by who they are for, or change the order. Select "More details" to read more and to send an enquiry.</p>
+
+  <div class="toolbar">
+    <label>Search programs
+      <input type="search" id="service-search" placeholder="For example: mentorship" autocomplete="off">
+    </label>
+    <label>Who it is for
+      <select id="service-category">
+        <option value="all">All programs</option>
+        <option value="youth">Youth</option>
+        <option value="community">Elderly and low-income</option>
+        <option value="family">Families</option>
+      </select>
+    </label>
+    <label>Sort by
+      <select id="service-sort">
+        <option value="az">Name (A to Z)</option>
+        <option value="za">Name (Z to A)</option>
+        <option value="target">Target group</option>
+      </select>
+    </label>
+  </div>
+
+  <p id="service-count" class="count" aria-live="polite"></p>
+
+  <div class="cards" id="service-list">
+    <noscript>
+      <p>Please turn on JavaScript to search and filter our programs. Our programs are:</p>
+      <ul>
+        <li>Youth Empowerment Initiative</li>
+        <li>Community Support &amp; Outreach</li>
+        <li>Family Unity Workshops</li>
+      </ul>
+    </noscript>
+  </div>
+
+  <h2>Office hours</h2>
+  <p>Monday to Thursday: 9:00 to 17:00<br>Friday: 9:00 to 14:30</p>
 </main>
 
 <footer>
-    <p>&copy; Hashtag SA Unite. All rights reserved.</p>
+  <p>&copy; <span id="year"></span> Hashtag SA Unite. All rights reserved.</p>
 </footer>
+<script src="JavaEditing.js"></script>
 </body>
 </html>
