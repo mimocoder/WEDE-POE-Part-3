@@ -420,7 +420,7 @@ function showProgramModal(program) {
     content.push(
         el("a", {
             class: "button",
-            href: `enquiry.html?support=${encodeURIComponent(program.title)}`
+            href: `Enquiry_Page.html?support=${encodeURIComponent(program.title)}`
         }, "Enquire about this program")
     );
 
