@@ -1,50 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Enquiries | Hashtag SA Unite</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enquire, Volunteer or Sponsor | Hashtag SA Unite</title>
+  <meta name="description" content="Ask about our programs, offer to volunteer or sponsor, or request support. Send an enquiry to Hashtag SA Unite and see availability and next steps.">
+  <meta name="keywords" content="volunteer South Africa, sponsor a program, community support enquiry, donate, partner with a non-profit">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Hashtag SA Unite">
+  <meta name="theme-color" content="#fffacd">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Hashtag SA Unite">
+  <meta property="og:title" content="Enquire, Volunteer or Sponsor | Hashtag SA Unite">
+  <meta property="og:description" content="Ask about our programs, offer to volunteer or sponsor, or request support. Send an enquiry to Hashtag SA Unite and see availability and next steps.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https://unpkg.com https://*.basemaps.cartocdn.com https://encrypted-tbn0.gstatic.com; connect-src 'self' https://jsonplaceholder.typicode.com; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="stylesheet" href="style.css">
 <body>
 <header>
-    <h1>Enquiries</h1>
-    <p>Serving our communities with love</p>
-    <nav>
-        <a href="Home_Page.html">Home</a>
-        <a href="About_us_Page.html">About us</a>
-        <a href="Services_Page.html">Services</a>
-        <a href="Enquiry_Page.html" aria-current="page">Enquiries</a>
-        <a href="Contact_Page.html">Contact</a>
-    </nav>
+  <h1>Enquiries</h1>
+  <p>Serving our communities with love</p>
+  <nav>
+    <a href="Home_Page.html">Home</a>
+    <a href="About_us_Page.html">About us</a>
+    <a href="Services_Page.html">Services</a>
+    <a href="Enquiry_Page.html" aria-current="page">Enquiries</a>
+    <a href="Contact_Page.html">Contact</a>
+  </nav>
 </header>
 
 <main>
-    <h2>To get in touch with us</h2>
-    <form action="mailto:info@hashtagsaunite.co.za" method="post" enctype="text/plain">
-        <div class="row">
-            <label>First name <input type="text" name="first-name" autocomplete="given-name" required></label>
-            <label>Last name <input type="text" name="last-name" autocomplete="family-name" required></label>
-        </div>
-        <label>Email <input type="email" name="email" autocomplete="email" required></label>
-        <label>Phone number <input type="tel" name="phone" autocomplete="tel"></label>
-        <label>Type of support
-            <select name="support-type" required>
-                <option value="">Choose one</option>
-                <option>Youth Empowerment Initiative</option>
-                <option>Community Support &amp; Outreach</option>
-                <option>Family Unity Workshops</option>
-                <option>Donation or partnership</option>
-                <option>Something else</option>
-            </select>
-        </label>
-        <label>Your message <textarea name="message" required></textarea></label>
-        <button type="submit">Send enquiry</button>
-    </form>
+  <h2>To get in touch with us</h2>
+  <form id="enquiry-form" novalidate>
+    <div class="row">
+      <label>First name
+        <input type="text" id="name" name="first-name" autocomplete="given-name">
+        <span class="error" id="name-error"></span>
+      </label>
+      <label>Last name
+        <input type="text" id="surname" name="last-name" autocomplete="family-name">
+        <span class="error" id="surname-error"></span>
+      </label>
+    </div>
+    <label>Email
+      <input type="email" id="email" name="email" autocomplete="email">
+      <span class="error" id="email-error"></span>
+    </label>
+    <label>Phone number (optional)
+      <input type="tel" id="phone" name="phone" autocomplete="tel">
+      <span class="error" id="phone-error"></span>
+    </label>
+    <label>Type of support
+      <select id="support-type" name="support-type">
+        <option value="">Choose one</option>
+        <option>Youth Empowerment Initiative</option>
+        <option>Community Support &amp; Outreach</option>
+        <option>Family Unity Workshops</option>
+        <option>Donation or partnership</option>
+        <option>Something else</option>
+      </select>
+      <span class="error" id="support-type-error"></span>
+    </label>
+    <label>Your message
+      <textarea id="message" name="message"></textarea>
+      <span class="error" id="message-error"></span>
+    </label>
+    <button type="submit">Send enquiry</button>
+    <p id="form-status" role="status"></p>
+  </form>
 </main>
 
 <footer>
-    <p>&copy; Hashtag SA Unite. All rights reserved.</p>
+  <p>&copy; <span id="year"></span> Hashtag SA Unite. All rights reserved.</p>
 </footer>
+<script src="JavaEditing.js"></script>
 </body>
 </html>
