@@ -1,0 +1,7 @@
+# Tells search engine crawlers what they may visit.
+User-agent: *
+Allow: /
+Disallow: /data/
+
+# CHANGE the address below to your real website address.
+Sitemap: https://www.hashtagsaunite.co.za/sitemap.xml
