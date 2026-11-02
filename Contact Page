@@ -3,8 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact | Hashtag SA Unite</title>
+    <title>Contact Us in Parow, Cape Town | Hashtag SA Unite</title>
+    <meta name="description" content="Contact Hashtag SA Unite by email, phone or message form, check our office hours and find our office on the map in Parow, Cape Town.">
+    <meta name="keywords" content="contact Hashtag SA Unite, Parow Cape Town non-profit, office hours, email, phone">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Hashtag SA Unite">
+    <meta name="theme-color" content="#fffacd">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Hashtag SA Unite">
+    <meta property="og:title" content="Contact Us in Parow, Cape Town | Hashtag SA Unite">
+    <meta property="og:description" content="Contact Hashtag SA Unite by email, phone or message form, check our office hours and find our office on the map in Parow, Cape Town.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https://unpkg.com https://*.basemaps.cartocdn.com https://encrypted-tbn0.gstatic.com; connect-src 'self' https://jsonplaceholder.typicode.com; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
 </head>
 <body>
 <header>
@@ -48,13 +60,40 @@
     <h2>Office hours</h2>
     <p>Monday to Thursday: 9:00 to 17:00<br>Friday: 9:00 to 14:30</p>
     <h2>Visit our office</h2>
-    <p>Our office is in Parrow, Cape Town. Our programs run at community centers across Gauteng and the Western Cape and through mobile outreach units, so get in touch first, and we will help you find the right place.</p>
-    <address>13 Parrow St, Parrow, Cape Town, 7500</address>
+    <p>Our office is in Parow, Cape Town. Our programs run at community centers across Gauteng and the Western Cape and through mobile outreach units, so get in touch first, and we will help you find the right place.</p>
+    <address>13 Parow St, Parow, Cape Town, 7500</address>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2824.0225793191066!2d18.57547997517694!3d-33.909727521179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5b51266935e7%3A0xb98375e9c9a5de32!2sHASHTAG%20SA%20UNITE!5e1!3m2!1sen!2sza!4v1787059850811!5m2!1sen!2sza" title="Hashtag SA Unite office location on Google Maps" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <div class="map-tools">
+        <button type="button" id="locate-btn">How far am I from the office?</button>
+        <a class="button" href="https://www.google.com/maps/dir/?api=1&amp;destination=-33.909727,18.57548" target="_blank" rel="noopener">Get directions</a>
+    </div>
+    <p id="distance-result" class="count" aria-live="polite"></p>
+
+    <h2>Frequently asked questions</h2>
+    <div class="accordion">
+        <div class="accordion-item">
+            <h3 class="accordion-title">Who can ask for support?</h3>
+            <div class="accordion-body"><p>We work with young people aged 15 to 25, families and caregivers, the elderly, and low-income families.</p></div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-title">Where do your programs run?</h3>
+            <div class="accordion-body"><p>Our programs run from community centers across Gauteng and the Western Cape, and through mobile outreach units that reach local township centers. Get in touch first and we will help you find the right place.</p></div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-title">When is the office open?</h3>
+            <div class="accordion-body"><p>Monday to Thursday: 9:00 to 17:00<br>Friday: 9:00 to 14:30</p></div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-title">How can my business or organization partner with you?</h3>
+            <div class="accordion-body"><p>Send us a message on the <a href="Enquiry_Page.html">enquiry form</a> and choose "Donation or partnership", or email <a href="mailto:info@hashtagsaunite.co.za">info@hashtagsaunite.co.za</a>.</p></div>
+        </div>
+    </div>
 </main>
 
 <footer>
-    <p>&copy; Hashtag SA Unite. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Hashtag SA Unite. All rights reserved.</p>
 </footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="JavaEditing.js"></script>
 </body>
 </html>
