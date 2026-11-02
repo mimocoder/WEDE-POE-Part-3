@@ -22,6 +22,7 @@ Other files consist of
 Design
 A palette choice of the following was made lemon chiffon (#fffacd), corn silk (#fff8dc) and off-white (#fdfcf6). The colors are stored at the top of the style.css document so that if changes are needed they can be made without confusion. The fonts used were Aptos, Arial Nova, Calibri, Arial, sans-serif. These font combination ensure consistency though out the website and keep an elegant look. The hero on home has an overlay that was made with a photo from the organization Hashtag SA Unite.
 
+
 The CSS Document is arranged in a way that the rules are written on the plain elements like body, header or button elements
 Other pages are not affected by the home page layout rules
 
@@ -33,6 +34,6 @@ The breaks points have been made so that each device can work accordingly with t
 
 Each page has a viewpoint which has been added to make the breakpoints work on different devices
 
-Java script page has been made to improve the overall user experience on the website. 
+Java script page has been made to improve the overall user experience on the website. This includes validations as well as support from CSS for animations
 
 
